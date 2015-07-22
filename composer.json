@@ -1,5 +1,5 @@
 {
-    "name": "phpeople/php-git-classes",
+    "name": "phpeople/git-classes",
     "type": "library",
     "license" :"BSD-3",
     "description": "GIT Classes",
