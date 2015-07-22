@@ -9,19 +9,24 @@ class Commit{
     private $hash;
 
     /**
-     * @var \DateTime
-     */
-    private $timestamp;
-
-    /**
      * @var User
      */
     private $author;
 
     /**
+     * @var \DateTime
+     */
+    private $authorTime;
+
+    /**
      * @var User
      */
     private $committer;
+
+    /**
+     * @var \DateTime
+     */
+    private $committerTime;
 
     /**
      * @var string
@@ -30,22 +35,25 @@ class Commit{
 
     /**
      * @param Hash $hash
-     * @param \DateTime $timestamp
      * @param User $author
+     * @param \DateTime $authorTime
      * @param User $committer
+     * @param \DateTime $committerTime
      * @param string $subject
      */
     public function __construct(
         Hash $hash,
-        \DateTime $timestamp,
         User $author,
+        \DateTime $authorTime,
         User $committer,
+        \DateTime $committerTime,
         $subject
     ) {
         $this->hash = $hash;
-        $this->timestamp = $timestamp;
         $this->author = $author;
+        $this->authorTime = $authorTime;
         $this->committer = $committer;
+        $this->committerTime = $committerTime;
         $this->subject = $subject;
     }
 
@@ -59,8 +67,15 @@ class Commit{
     /**
      * @return \DateTime
      */
-    public function getTimestamp() {
-        return $this->timestamp;
+    public function getAuthorTime() {
+        return $this->authorTime;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCommitterTime() {
+        return $this->committerTime;
     }
 
     /**
@@ -83,5 +98,5 @@ class Commit{
     public function getSubject() {
         return $this->subject;
     }
-    
+
 }
