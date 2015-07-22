@@ -11,6 +11,7 @@
         "php": ">=5.5.0"
     },
     "require-dev": {
-        "theseer/autoload": ">=1.19"
+        "theseer/autoload": ">=1.19",
+        "phpunit/phpunit": ">=4.7"
     }
 }
