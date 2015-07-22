@@ -2,7 +2,7 @@
     "name": "phpeople/git-classes",
     "type": "library",
     "license" :"BSD-3",
-    "description": "GIT Classes",
+    "description": "Classes representing Git data",
     "keywords": ["git"],
     "autoload": {
         "classmap": ["src/"]
