@@ -1,0 +1,16 @@
+{
+    "name": "phpeople/php-git-classes",
+    "type": "library",
+    "license" :"BSD-3",
+    "description": "GIT Classes",
+    "keywords": ["git"],
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "theseer/autoload": ">=1.17.*"
+    }
+}
